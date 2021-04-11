@@ -1,0 +1,13 @@
+[package]
+name = "lines"
+version = "0.1.1"
+authors = ["melike2d <gino@dimensional.fun>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.3.21"
+regex = "1.4.5"
+colored = "2.0.0"
+indoc = "1.0.3"
+walkdir = "2.3.2"
+indicatif = "0.15.0"
