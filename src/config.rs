@@ -9,8 +9,4 @@ pub struct LinesConfig {
   /// Whether empty lines should be included
   #[structopt(short = "ie", long)]
   pub include_empty: bool,
-
-  /// Whether the progress bar for the directory mode is disabled
-  #[structopt(long)]
-  pub no_progressbar: bool
 }
