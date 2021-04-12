@@ -3,7 +3,7 @@ use std::io::Error;
 use std::path::Path;
 
 use colored::Colorize;
-use indoc::{indoc, printdoc};
+use indoc::{printdoc};
 use regex::Regex;
 use walkdir::WalkDir;
 
@@ -45,7 +45,7 @@ fn compute_file_contents(file: &Path, config: &LinesConfig) -> Result<FileConten
   let lines = file_contents.lines()
     .map(|l| l.trim())
     // filter out empty lines & lines only consisting of comments.
-    .filter(|l| config.ignore_empty || !l.is_empty())
+    .filter(|l| config.include_empty || !l.is_empty())
     .filter(|l| config.include_comments || !comment_regex.is_match(l));
 
   for line in lines {

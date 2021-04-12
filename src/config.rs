@@ -6,9 +6,9 @@ pub struct LinesConfig {
   #[structopt(short = "ic", long)]
   pub include_comments: bool,
 
-  /// Whether empty files will be excluded
-  #[structopt(long)]
-  pub ignore_empty: bool,
+  /// Whether empty lines should be included
+  #[structopt(short = "ie", long)]
+  pub include_empty: bool,
 
   /// Whether the progress bar for the directory mode is disabled
   #[structopt(long)]
