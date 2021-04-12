@@ -6,7 +6,7 @@ simple cli thingy that counts how many lines of code there are in the supplied f
 
 ## Usage
 
-`lines [options] <path>`
+`lines [flags] <path>`
 
 - `--include-empty` whether to include empty lines
 - `--include-comments` whether lines only consisting of comments should be included
